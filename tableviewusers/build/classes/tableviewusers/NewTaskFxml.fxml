@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="554.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tableviewusers.NewTaskFxmlController">
+   <children>
+      <TableView fx:id="tbl_student" layoutY="38.0" onMouseClicked="#get_selected" prefHeight="348.0" prefWidth="682.0" style="-fx-background-color: #ffe6ea;">
+        <columns>
+          <TableColumn fx:id="col_st_id" prefWidth="71.0" text="student_id" />
+          <TableColumn fx:id="col_st_name" prefWidth="147.0" text="student_name" />
+            <TableColumn fx:id="col_st_email" prefWidth="152.0" text="student_email" />
+            <TableColumn fx:id="col_st_password" prefWidth="159.0" text="student_password" />
+            <TableColumn fx:id="col_st_course" prefWidth="144.0" text="student_course" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutY="381.0" prefHeight="172.0" prefWidth="682.0" style="-fx-background-color: #ffccd5;">
+         <children>
+            <TextField fx:id="txt_st_id" layoutX="14.0" layoutY="14.0" prefHeight="40.0" prefWidth="150.0" promptText="student_id" />
+            <TextField fx:id="txt_st_name" layoutX="14.0" layoutY="66.0" prefHeight="40.0" prefWidth="150.0" promptText="student_name" />
+            <TextField fx:id="txt_st_email" layoutX="14.0" layoutY="118.0" prefHeight="40.0" prefWidth="150.0" promptText="student_email" />
+            <PasswordField fx:id="txt_st_password" layoutX="180.0" layoutY="66.0" prefHeight="40.0" prefWidth="150.0" promptText="student_password" />
+            <Button layoutX="518.0" layoutY="14.0" mnemonicParsing="false" onAction="#add_students" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #ff4d6a;" text="add" textFill="WHITE" />
+            <Button layoutX="518.0" layoutY="66.0" mnemonicParsing="false" onAction="#edit_students" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #ff4d6a;" text="update" textFill="WHITE" />
+            <Button layoutX="518.0" layoutY="118.0" mnemonicParsing="false" onAction="#deleteStudent" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #ff4d6a;" text="delete" textFill="WHITE" />
+            <TextField fx:id="txt_st_course" layoutX="180.0" layoutY="14.0" prefHeight="40.0" prefWidth="150.0" promptText="course_name" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="txt_st_search" layoutX="258.0" layoutY="6.0" prefHeight="27.0" prefWidth="410.0" promptText="Search here.....">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
