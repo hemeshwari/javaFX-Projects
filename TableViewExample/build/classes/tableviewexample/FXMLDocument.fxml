@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tableviewexample.FXMLDocumentController">
+   <children>
+      <TableView fx:id="table" layoutY="-3.0" prefHeight="497.0" prefWidth="656.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="57.333343505859375" text="ID" />
+          <TableColumn fx:id="name" minWidth="1.0" prefWidth="99.00003051757812" text="NAME" />
+            <TableColumn fx:id="lname" prefWidth="132.33331298828125" text="LAST NAME" />
+            <TableColumn prefWidth="132.66668701171875" text="MAIL">
+               <columns>
+                  <TableColumn fx:id="gmail" prefWidth="75.0" text="GMAIL" />
+                  <TableColumn fx:id="yahoo" prefWidth="75.0" text="YAHOO" />
+               </columns>
+            </TableColumn>
+            <TableColumn fx:id="phone" prefWidth="108.0" text="PHONE" />
+            <TableColumn fx:id="country" prefWidth="117.0" text="COUNTRY" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
